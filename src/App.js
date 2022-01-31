@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Title from "./Components/Header/Title";
+import Baseline from "./Components/Header/Baseline";
+import NavigationMenu from "./Components/NavigationMenu/NavigationMenu";
+import Content from "./Components/Content/Content";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="header">
+        <Title title="My Blog" />
+        <Baseline baseline="An awesome baseline" />
+      </div>
+      <NavigationMenu />
+      <Content />
+      <Footer techno="React" formation="Reacteur" author="Emlych" />
     </div>
   );
 }
